@@ -175,6 +175,6 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            /tmp/${{ inputs.P }}-crates.tar.xz
-            input/${{ inputs.WORKDIR }}/${{ inputs.P }}.ebuild
+            /tmp/*-crates.tar.xz
+            input/${{ inputs.WORKDIR }}/*.ebuild
           tag_name: ${{ inputs.P }}
